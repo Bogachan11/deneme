@@ -1,0 +1,20 @@
+---
+	name: Vm from template
+	hosts: localhost
+	connection: local 
+	gather_facts: no
+	
+	tasks:
+		name: Vm for SAP
+		vmware_guest:
+			hostname: 192.168.1.3
+			username: Konsalt\bogachan.bilgin
+			password: A.b15aysun
+			validate_certs: False
+			name: TestVM_Sap
+			template: Temlates rhel9
+			datacenter: datacenter
+			datastore: ds_nas1
+			folder: Prodvm
+			state: poweredon
+			waid_for_ip_address: no
