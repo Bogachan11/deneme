@@ -11,6 +11,7 @@
       password: Asdasd123123
       validate_certs: False
       name: Denemebgc
+      template: rhel-7-template
       datacenter: Konsalt-MESA
       folder: /RedHat/RHEL
       state: poweredon
