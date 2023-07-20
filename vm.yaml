@@ -1,0 +1,17 @@
+---
+- name: vmdeneme
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name : new vm
+    vmware_guest:
+      hostname: 192.168.1.3 
+      username: Konsalt\bogachan.bilgin    
+      password: Asdasd123123
+      validate_certs: False
+      name: Denemebgc
+      datacenter: Konsalt-MESA
+      folder: /RedHat/RHEL
+      state: poweredon
+      wait_for_ip_address: no
