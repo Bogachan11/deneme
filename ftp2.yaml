@@ -1,0 +1,6 @@
+---
+ - name: Transfer file to FTP server
+  shell:
+    cmd: "curl --silent --user {{ admin }}:{{ Qq123456 }} ftp://ftp.example.com -T {{ fileToTransfer }}"
+  register: result
+  
